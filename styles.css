@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: black;
+  position: relative;
+  width: 100%;
+}
+.items {
+  margin-right: 8rem;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  padding: 14px 20px;
+  text-decoration: none;
+  line-height: 50px;
+}
+
+.navbar img {
+  float: left;
+  padding: 10px;
+  height: 70px;
+  margin-left: 2.5rem;
+}
+
+.sacs {
+  position: relative;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.slider-nav .prev,
+.slider-nav .next {
+  position: absolute;
+  top: -20px;
+  width: 80px;
+  height: 80px;
+  background-color: #faca04;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 40px;
+  line-height: 80px;
+}
+
+.slider-nav .prev {
+  left: 20px;
+}
+
+.slider-nav .next {
+  right: 20px;
+}
+.slider-nav .prev img,
+.slider-nav .next img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  margin-right: 2.5rem;
+}
+
+.search-container img {
+  height: 30px;
+}
+.textBanner h3 {
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+}
+.textBanner {
+  background-color: #ffce00;
+  width: 400px;
+  border-radius: 45px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  padding: 8px 15px;
+  margin-top: 10rem;
+  height: 14rem;
+}
+.buttonBanner button {
+  font-family: "Outfit", sans-serif;
+  padding: 10px 20px;
+  width: 120px;
+  background-color: white; /* Green */
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  border-radius: 45px;
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  justify-content: center;
+}
+.imgBanner {
+  width: 400px;
+  display: block;
+}
+
+
+.papitas{
+  display: flex;
+  flex-direction: row;
+  margin-top: -189px;
+}
+.papitas img{
+  width: 230px;
+  position: absolute;
+  z-index: 1;
+
+}
+
+.papita2{
+  margin-left: 78%;
+  margin-top: 15rem;
+}
+.papita1{
+  margin-top: 10.6rem;
+  margin-left: 8rem;
+}
+
+
+.contenedor1{
+  position: relative; /* Necesario para posicionar las imágenes internamente */
+  width: 500px; /* Ancho de la imagen principal */
+  height: 300px;
+  padding: 20px;
+}
+
+
+
+
+/*####################################################################################*/
+.container2 {
+  width: 100%;
+  height: 34rem;
+  background-color: #28a00b;
+}
+#slider {
+  margin: 0 auto;
+  width: 800px;
+  max-width: 100%;
+  text-align: center;
+
+}
+#slider input[type=radio] {
+  display: none;
+}
+#slider label {
+  cursor:pointer;
+  text-decoration: none;
+}
+#slides {
+  position: relative;
+  z-index: 1;
+}
+#overflow {
+  width: 100%;
+  overflow: hidden;
+}
+#slide1:checked ~ #slides .inner {
+  margin-left: 0;
+}
+#slide2:checked ~ #slides .inner {
+  margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner {
+  margin-left: -200%;
+}
+#slide4:checked ~ #slides .inner {
+  margin-left: -300%;
+}
+#slides .inner {
+  transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+  width: 400%;
+  line-height: 0;
+  height: 500px; 
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+#slides .slide {
+  width: 25%;
+  float:left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+}
+
+#controls {
+  margin: -180px 0 0 0;
+  width: 50%;
+  margin-left: 20rem;
+  z-index: 3;
+  position: relative;
+
+}
+#controls label {
+  transition: opacity 0.2s ease-out;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  font-size: 24px; 
+  color: black; 
+  line-height: 50px;
+  text-align: center; 
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%);
+}
+#prevBtn,
+#nextBtn {
+  display: inline-block; /* Para que el label se comporte como un bloque */
+  width: 50px; /* Ancho del label */
+  height: 50px; /* Alto del label */
+  overflow: hidden; /* Oculta cualquier contenido que exceda el tamaño del label */
+  text-align: center; /* Centra horizontalmente el contenido */
+}
+#prevBtn img,
+#nextBtn img {
+  margin-top: 15px;
+  max-width: 60%; 
+  max-height: 60%; /* Ajusta la altura máxima de la imagen al 100% del alto del label */
+  vertical-align: middle; 
+}
+
+#prevBtn {
+  left: 0;
+  border-radius: 50%;
+  width: 80px !important;
+  height: 80px !important;
+  background-color: #faca04 !important;
+  margin-left: -20rem !important;
+}
+
+#nextBtn {
+  right: 0;
+  border-radius: 50%;
+  width: 80px !important;
+  height: 80px !important;
+  background-color: #faca04 !important;
+  margin-right: -5rem !important;
+}
+
+#controls label:hover {
+  opacity: 1;
+}
+#bullets {
+  margin: 150px 0 0;
+  text-align: center;
+}
+#bullets label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius:100%;
+  margin-top: 30px !important;
+  background: #ccc;
+  margin: 0 10px;
+}
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+  background: #444;
+}
+@media screen and (max-width: 900px) {
+  #slide1:checked ~ #controls label:nth-child(2),
+  #slide2:checked ~ #controls label:nth-child(3),
+  #slide3:checked ~ #controls label:nth-child(4),
+  #slide4:checked ~ #controls label:nth-child(1),
+  #slide1:checked ~ #controls label:nth-last-child(2),
+  #slide2:checked ~ #controls label:nth-last-child(3),
+  #slide3:checked ~ #controls label:nth-last-child(4),
+  #slide4:checked ~ #controls label:nth-last-child(1) {
+     margin: 0;
+  }
+  #slides {
+     max-width: calc(100% - 140px);
+     margin: 0 auto;
+  }
+}
+.textBannerText{
+  color: white;
+}
+
+
+  .jaa{
+  width: 30rem;
+}
+
