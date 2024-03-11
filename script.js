@@ -1,3 +1,5 @@
+//slider 1
+
 document.addEventListener("DOMContentLoaded", function () {
   const slides = document.querySelectorAll(".slide");
   let currentSlide = 0;
@@ -16,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     showSlide(currentSlide + 1);
   });
 });
-
+// slider 2
 document.addEventListener("DOMContentLoaded", function () {
   const slides = document.querySelectorAll(".slide2");
   let currentSlide = 0;
@@ -35,6 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
     showSlide(currentSlide + 1);
   });
 });
+
+//slider 3
 
 document.addEventListener("DOMContentLoaded", function () {
   const slides = document.querySelectorAll(".slide3");

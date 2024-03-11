@@ -8,6 +8,7 @@ body {
   background-color: black;
   position: relative;
   width: 100%;
+  z-index: 2;
 }
 .items {
   margin-right: 8rem;
@@ -24,6 +25,13 @@ body {
   padding: 14px 20px;
   text-decoration: none;
   line-height: 50px;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  cursor: pointer;
+  font-size: 24px;
+  color: yellow;
 }
 
 .navbar img {
@@ -167,8 +175,6 @@ body {
   height: 300px;
   padding: 20px;
 }
-
-/*####################################################################################*/
 .container2 {
   width: 100%;
   height: 34rem;
@@ -327,8 +333,6 @@ body {
 .jaa {
   width: 30rem;
 }
-
-/*####################################################################################*/
 .container3 {
   width: 100%;
   height: 34rem;
@@ -482,7 +486,6 @@ body {
   width: 30rem;
 }
 
-/*####################################################################################*/
 .container4 {
   width: 100%;
   height: 34rem;
@@ -662,74 +665,94 @@ body {
   margin-top: 4rem;
 }
 
-
-
-
-
-
-
 .BannerEnd {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   font-family: "Outfit", sans-serif;
-  justify-content: center; 
+  justify-content: center;
   font-size: 2rem;
 }
 
-
-.left{
+.left {
   margin-left: 10rem;
 }
 .left img {
   width: 80%;
 }
 
-
 .right {
-  margin-left: auto; 
+  margin-left: auto;
   display: flex;
   flex-direction: row;
 
-  align-items: center; 
+  align-items: center;
 }
-
 
 .center {
   flex: 1;
-  text-align: center; 
-  align-self: center; 
+  text-align: center;
+  align-self: center;
 }
 
 .right img {
   width: 20%;
   margin-right: 10px;
 }
-.center p{
-  margin: 5px 0; 
+.center p {
+  margin: 5px 0;
 }
-
 
 .rowBannerEnd {
   display: flex;
   flex-direction: row;
 }
-.BannerEnd{
+.BannerEnd {
   background-color: #faca04;
+  height: 200px;
 }
 
+.opinion {
+  margin-left: 80px;
+}
 
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+}
 
-
-
-
-
-.footer p{
+.social {
+  position: relative;
+  display: inline-block;
+}
+.social img {
+  width: 22px;
+  height: auto;
+  border-radius: 50%;
+  background-color: #faca04;
+  padding: 5px;
+  position: relative;
+  z-index: 1;
+}
+.social::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background-color: #000;
+  border-radius: 50%;
+  z-index: -1;
+}
+.footer p {
   color: white;
 }
-
-
-
-
-
-
