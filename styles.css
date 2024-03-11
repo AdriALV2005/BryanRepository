@@ -635,3 +635,29 @@ body {
 .jaa3 {
   width: 30rem;
 }
+
+.row img {
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+}
+.row p {
+  color: white;
+  font-family: "Outfit", sans-serif;
+  width: 50%;
+  font-size: 1.2rem;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-left: 7rem;
+}
+.Testimonios h1 {
+  color: white;
+  margin-bottom: 6rem;
+  font-family: "Outfit", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 4rem;
+}
