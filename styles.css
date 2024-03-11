@@ -118,7 +118,7 @@ body {
   font-family: "Outfit", sans-serif;
   padding: 10px 20px;
   width: 120px;
-  background-color: white; /* Green */
+  background-color: white;
   border: none;
   text-align: center;
   text-decoration: none;
@@ -141,38 +141,32 @@ body {
   display: block;
 }
 
-
-.papitas{
+.papitas {
   display: flex;
   flex-direction: row;
   margin-top: -189px;
 }
-.papitas img{
+.papitas img {
   width: 230px;
   position: absolute;
   z-index: 1;
-
 }
 
-.papita2{
+.papita2 {
   margin-left: 78%;
   margin-top: 15rem;
 }
-.papita1{
+.papita1 {
   margin-top: 10.6rem;
   margin-left: 8rem;
 }
 
-
-.contenedor1{
-  position: relative; /* Necesario para posicionar las imágenes internamente */
-  width: 500px; /* Ancho de la imagen principal */
+.contenedor1 {
+  position: relative;
+  width: 500px;
   height: 300px;
   padding: 20px;
 }
-
-
-
 
 /*####################################################################################*/
 .container2 {
@@ -185,13 +179,12 @@ body {
   width: 800px;
   max-width: 100%;
   text-align: center;
-
 }
-#slider input[type=radio] {
+#slider input[type="radio"] {
   display: none;
 }
 #slider label {
-  cursor:pointer;
+  cursor: pointer;
   text-decoration: none;
 }
 #slides {
@@ -215,17 +208,17 @@ body {
   margin-left: -300%;
 }
 #slides .inner {
-  transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+  transition: margin-left 800ms cubic-bezier(0.77, 0, 0.175, 1);
   width: 400%;
   line-height: 0;
-  height: 500px; 
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
+  height: 500px;
+  justify-content: center;
+  align-items: center;
 }
 
 #slides .slide {
   width: 25%;
-  float:left;
+  float: left;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,37 +232,36 @@ body {
   margin-left: 20rem;
   z-index: 3;
   position: relative;
-
 }
 #controls label {
   transition: opacity 0.2s ease-out;
   display: inline-block;
   width: 50px;
   height: 50px;
-  font-size: 24px; 
-  color: black; 
+  font-size: 24px;
+  color: black;
   line-height: 50px;
-  text-align: center; 
+  text-align: center;
   background-color: transparent;
   cursor: pointer;
   position: absolute;
-  top: 50%; 
+  top: 50%;
   transform: translateY(-50%);
 }
 #prevBtn,
 #nextBtn {
-  display: inline-block; /* Para que el label se comporte como un bloque */
-  width: 50px; /* Ancho del label */
-  height: 50px; /* Alto del label */
-  overflow: hidden; /* Oculta cualquier contenido que exceda el tamaño del label */
-  text-align: center; /* Centra horizontalmente el contenido */
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  text-align: center;
 }
 #prevBtn img,
 #nextBtn img {
   margin-top: 15px;
-  max-width: 60%; 
-  max-height: 60%; /* Ajusta la altura máxima de la imagen al 100% del alto del label */
-  vertical-align: middle; 
+  max-width: 60%;
+  max-height: 60%;
+  vertical-align: middle;
 }
 
 #prevBtn {
@@ -301,7 +293,7 @@ body {
   display: inline-block;
   width: 10px;
   height: 10px;
-  border-radius:100%;
+  border-radius: 100%;
   margin-top: 30px !important;
   background: #ccc;
   margin: 0 10px;
@@ -321,56 +313,26 @@ body {
   #slide2:checked ~ #controls label:nth-last-child(3),
   #slide3:checked ~ #controls label:nth-last-child(4),
   #slide4:checked ~ #controls label:nth-last-child(1) {
-     margin: 0;
+    margin: 0;
   }
   #slides {
-     max-width: calc(100% - 140px);
-     margin: 0 auto;
+    max-width: calc(100% - 140px);
+    margin: 0 auto;
   }
 }
-.textBannerText{
+.textBannerText {
   color: white;
 }
 
-
-  .jaa{
+.jaa {
   width: 30rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*####################################################################################*/
 .container3 {
   width: 100%;
   height: 34rem;
   background-color: rgb(0, 0, 0);
-
-
 }
 #slider2 {
   margin: 0 auto;
@@ -378,11 +340,11 @@ body {
   max-width: 100%;
   text-align: center;
 }
-#slider2 input[type=radio] {
+#slider2 input[type="radio"] {
   display: none;
 }
 #slider2 label {
-  cursor:pointer;
+  cursor: pointer;
   text-decoration: none;
 }
 #slides2 {
@@ -406,16 +368,16 @@ body {
   margin-left: -300%;
 }
 #slides2 .inner2 {
-  transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+  transition: margin-left 800ms cubic-bezier(0.77, 0, 0.175, 1);
   width: 400%;
   line-height: 0;
   height: 500px;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
+  justify-content: center;
+  align-items: center;
 }
 #slides2 .slide2 {
   width: 25%;
-  float:left;
+  float: left;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -434,30 +396,30 @@ body {
   display: inline-block;
   width: 50px;
   height: 50px;
-  font-size: 24px; 
-  color: black; 
+  font-size: 24px;
+  color: black;
   line-height: 50px;
-  text-align: center; 
+  text-align: center;
   background-color: transparent;
   cursor: pointer;
   position: absolute;
-  top: 50%; 
+  top: 50%;
   transform: translateY(-50%);
 }
 #prevBtn2,
 #nextBtn2 {
-  display: inline-block; /* Para que el label se comporte como un bloque */
-  width: 50px; /* Ancho del label */
-  height: 50px; /* Alto del label */
-  overflow: hidden; /* Oculta cualquier contenido que exceda el tamaño del label */
-  text-align: center; /* Centra horizontalmente el contenido */
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  text-align: center;
 }
 #prevBtn2 img,
 #nextBtn2 img {
   margin-top: 15px;
-  max-width: 60%; 
-  max-height: 60%; /* Ajusta la altura máxima de la imagen al 100% del alto del label */
-  vertical-align: middle; 
+  max-width: 60%;
+  max-height: 60%;
+  vertical-align: middle;
 }
 #prevBtn2 {
   left: 0;
@@ -486,7 +448,7 @@ body {
   display: inline-block;
   width: 10px;
   height: 10px;
-  border-radius:100%;
+  border-radius: 100%;
   margin-top: 30px !important;
   background: #ccc;
   margin: 0 10px;
@@ -506,43 +468,19 @@ body {
   #slide6:checked ~ #controls2 label:nth-last-child(3),
   #slide7:checked ~ #controls2 label:nth-last-child(4),
   #slide8:checked ~ #controls2 label:nth-last-child(1) {
-     margin: 0;
+    margin: 0;
   }
   #slides2 {
-     max-width: calc(100% - 140px);
-     margin: 0 auto;
+    max-width: calc(100% - 140px);
+    margin: 0 auto;
   }
 }
-.textBannerText{
+.textBannerText {
   color: white;
 }
-.jaa2{
+.jaa2 {
   width: 30rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*####################################################################################*/
 .container4 {
@@ -556,11 +494,11 @@ body {
   max-width: 100%;
   text-align: center;
 }
-#slider3 input[type=radio] {
+#slider3 input[type="radio"] {
   display: none;
 }
 #slider3 label {
-  cursor:pointer;
+  cursor: pointer;
   text-decoration: none;
 }
 #slides3 {
@@ -584,16 +522,16 @@ body {
   margin-left: -300%;
 }
 #slides3 .inner3 {
-  transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+  transition: margin-left 800ms cubic-bezier(0.77, 0, 0.175, 1);
   width: 400%;
   line-height: 0;
   height: 500px;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
+  justify-content: center;
+  align-items: center;
 }
 #slides3 .slide3 {
   width: 25%;
-  float:left;
+  float: left;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -612,30 +550,30 @@ body {
   display: inline-block;
   width: 50px;
   height: 50px;
-  font-size: 24px; 
-  color: black; 
+  font-size: 24px;
+  color: black;
   line-height: 50px;
-  text-align: center; 
+  text-align: center;
   background-color: transparent;
   cursor: pointer;
   position: absolute;
-  top: 50%; 
+  top: 50%;
   transform: translateY(-50%);
 }
 #prevBtn3,
 #nextBtn3 {
-  display: inline-block; /* Para que el label se comporte como un bloque */
-  width: 50px; /* Ancho del label */
-  height: 50px; /* Alto del label */
-  overflow: hidden; /* Oculta cualquier contenido que exceda el tamaño del label */
-  text-align: center; /* Centra horizontalmente el contenido */
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  text-align: center;
 }
 #prevBtn3 img,
 #nextBtn3 img {
   margin-top: 15px;
-  max-width: 60%; 
-  max-height: 60%; /* Ajusta la altura máxima de la imagen al 100% del alto del label */
-  vertical-align: middle; 
+  max-width: 60%;
+  max-height: 60%;
+  vertical-align: middle;
 }
 #prevBtn3 {
   left: 0;
@@ -664,7 +602,7 @@ body {
   display: inline-block;
   width: 10px;
   height: 10px;
-  border-radius:100%;
+  border-radius: 100%;
   margin-top: 30px !important;
   background: #ccc;
   margin: 0 10px;
@@ -684,16 +622,16 @@ body {
   #slide10:checked ~ #controls3 label:nth-last-child(3),
   #slide11:checked ~ #controls3 label:nth-last-child(4),
   #slide12:checked ~ #controls3 label:nth-last-child(1) {
-     margin: 0;
+    margin: 0;
   }
   #slides3 {
-     max-width: calc(100% - 140px);
-     margin: 0 auto;
+    max-width: calc(100% - 140px);
+    margin: 0 auto;
   }
 }
-.textBannerText{
+.textBannerText {
   color: white;
 }
-.jaa3{
+.jaa3 {
   width: 30rem;
 }
