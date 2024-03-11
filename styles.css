@@ -661,3 +661,75 @@ body {
   text-align: center;
   margin-top: 4rem;
 }
+
+
+
+
+
+
+
+.BannerEnd {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  font-family: "Outfit", sans-serif;
+  justify-content: center; 
+  font-size: 2rem;
+}
+
+
+.left{
+  margin-left: 10rem;
+}
+.left img {
+  width: 80%;
+}
+
+
+.right {
+  margin-left: auto; 
+  display: flex;
+  flex-direction: row;
+
+  align-items: center; 
+}
+
+
+.center {
+  flex: 1;
+  text-align: center; 
+  align-self: center; 
+}
+
+.right img {
+  width: 20%;
+  margin-right: 10px;
+}
+.center p{
+  margin: 5px 0; 
+}
+
+
+.rowBannerEnd {
+  display: flex;
+  flex-direction: row;
+}
+.BannerEnd{
+  background-color: #faca04;
+}
+
+
+
+
+
+
+
+.footer p{
+  color: white;
+}
+
+
+
+
+
+
